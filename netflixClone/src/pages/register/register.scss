@@ -1,0 +1,88 @@
+.register {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("../../assets/imgs/netflixBgImg.jpg");
+  background-size: cover;
+  position: relative;
+  .top {
+    z-index: 2;
+    position: relative;
+    .wrapper {
+      padding: 20px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+        height: 40px;
+        cursor: pointer;
+      }
+      .loginButton {
+        background-color: var(--btnBg);
+        border: none;
+        color: var(--white);
+        border-radius: 5px;
+        padding: 5px 15px;
+        font-size: var(--fs16);
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+  }
+  .container {
+    h1 {
+      font-size: var(--fs48)
+    }
+    h4 {
+      margin: 20px;
+      font-size: var(--fs24);
+      font-weight: 400;
+    }
+
+    p {
+      font-size: var(--fs20)
+    }
+
+    .input {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+      height: 50px;
+      border-radius: 5px;
+      gap: 8px;
+      input{
+          flex: 9;
+          height: 100%;
+          padding: 0 10px;
+          font-size: var(--fs18);
+          color: var(--white);
+          outline: none;
+          background-color: transparent;
+          border: 1px solid var(--gray);
+          &::placeholder{
+            font-size: var(--fs18);
+            color: var(--white);
+          }
+
+      }
+
+      .registerButton{
+          flex: 4;
+          height: 100%;
+          background-color: var(--btnBg);
+          border: none;
+          font-weight: 600;
+          border-radius: 4px;
+          color: var(--white);
+          font-size: var(--fs20);
+          cursor: pointer;
+      }
+    }
+  }
+}

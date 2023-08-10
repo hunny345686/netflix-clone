@@ -1,0 +1,67 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("../../assets/imgs/netflixBgImg.jpg");
+  background-size: cover;
+  position: relative;
+
+  .top {
+    position: relative;
+    z-index: 2;
+    .wrapper {
+      padding: 20px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        height: 40px;
+        cursor: pointer;
+      }
+    }
+  }
+  .container {
+    form {
+      width: 400px;
+      height: 500px;
+      padding: 50px 40px;
+      border-radius: 5px;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      input {
+        height: 40px;
+        border-radius: 5px;
+        background-color: var(--gray);
+        color: var(--white);
+        padding-left: 10px;
+
+        &::placeholder {
+          color: lightvar(--gray)
+        }
+      }
+
+      button {
+        height: 40px;
+        border-radius: 5px;
+        background-color:var(--btnBg);
+        color: var(--white);
+        border: none;
+        font-size: var(--fs18);
+        font-weight: 500;
+        cursor: pointer;
+      }
+        color: lightvar(--gray)
+        b {
+          color: var(--link);
+        }
+    }
+  }
+}
